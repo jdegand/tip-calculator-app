@@ -30,7 +30,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Github Pages]()
+- Live Site URL: [Github Pages](https://jdegand.github.io/tip-calculator-app/)
 
 ## My process
 
