@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+  <title>Frontend Mentor | Tip calculator app</title>
+
+</head>
+<body>
+ 
+  <main class="main">
+    <img class="logo" src="images/logo.svg" alt="Splitter">
+    <div class="container">
+  
+      <div class="left">
+  
+      <div>
+      <label for="bill">Bill</label>
+      <input id="bill" type="number" min="1" maxlength="7" oninput="this.value=this.value.slice(0,this.maxLength)" placeholder="142.55">
+    </div>
+
+    <div>
+      <div>Select Tip %</div>
+      <div id="tipPercentage">
+        <div class="tipBtn">5%</div>
+        <div class="tipBtn">10%</div>
+        <div class="tipBtn active">15%</div>
+        <div class="tipBtn">25%</div>
+        <div class="tipBtn">50%</div>
+        <input id="inputTip" type="number" min="1" maxlength="2" oninput="this.value=this.value.slice(0,this.maxLength)" placeholder="Custom">
+      </div>
+    </div>
+
+    <div>
+      <label for="numPeople">Number of People</label>
+      <input id="numPeople" type="number" min="1" maxlength="3" placeholder="1" value="1" oninput="this.value=this.value.slice(0,this.maxLength)">
+    </div>
+
+  </div>
+
+  <div class="right">
+
+    <div class="flex">
+      <div>
+        <div>Tip Amount</div>
+        <div class="strongCyan"> / person</div>
+      </div>
+    <div class="strongCyan">$<span id="tipAmount">0.00</span></div>
+  </div>
+
+  <div class="flex">
+    <div>
+      <div>Total</div>
+      <div class="strongCyan"> / person</div>
+    </div>
+  <div class="strongCyan">$<span id="totalAmount">0.00</span></div>
+  </div>
+
+  <div>
+    <button type="reset" onclick="reset()">RESET</button>
+  </div>
+  </div>
+  </div>
+  </main>
+</body>
+</html>

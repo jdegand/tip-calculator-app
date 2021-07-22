@@ -1,0 +1,336 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
+:root {
+    --StrongCyan: hsl(172, 67%, 45%);
+    --VeryDarkCyan: hsl(183, 100%, 15%);
+    --DarkGrayishCyan: hsl(186, 14%, 43%);
+    --DarkGrayishCyan2: hsl(184, 14%, 56%);
+    --LightGrayishCyan: hsl(185, 41%, 84%);
+    --LightGrayishCyan2: hsl(189, 41%, 97%);
+    }
+    
+    * {
+        -webkit-box-sizing: border-box;
+                box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+      }
+    
+      img { 
+        height: 100%;
+        width: 100%;
+    } 
+      
+      body {
+        min-height: 100vh;
+        background-color: var(--LightGrayishCyan);
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        font-family: "Space Mono", sans-serif;
+        font-size: 24px;
+      }
+    
+      .main {
+        width: 1000px;
+        border-radius: 10px;
+        padding: 20px;
+       
+      }
+    
+      .logo {
+          width: 100px;
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          margin-bottom: 20px;
+      }
+    
+      .container {
+        display: -ms-grid;
+        display: grid;
+        -ms-grid-columns: 1fr 15px 1fr;
+        grid-template-columns: repeat(2, 1fr);
+        background-color: white;
+        padding: 40px;
+        border-radius: 10px;
+        grid-gap: 15px;
+    }
+    
+    .flex {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+    }
+    
+    .left {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+    }
+    
+    .right {
+        background-color: var(--VeryDarkCyan);
+        color: white;
+        border-radius: 10px;
+        padding: 25px;
+        display: -ms-grid;
+        display: grid;
+        -ms-grid-rows: 140px 140px 50px;
+        grid-template-rows: 140px 140px 50px;
+    }
+    
+    label {
+        margin: 10px 0;
+    }
+    
+    label,input{
+        display:-webkit-box;
+        display:-ms-flexbox;
+        display:flex;
+        -webkit-box-orient:vertical;
+        -webkit-box-direction:normal;
+            -ms-flex-direction:column;
+                flex-direction:column;
+      }
+    
+    #tipPercentage {
+        display: -ms-grid;
+        display: grid;
+        -ms-grid-columns: 140px 15px 140px 15px 140px;
+        grid-template-columns: repeat(3, 140px);
+        grid-gap: 15px;
+    }
+    
+    .tipBtn {
+        background-color: var(--VeryDarkCyan);
+        color: white;
+        text-align: center;
+        padding: 10px;
+        cursor: pointer;
+        font-weight: 700;
+        border-radius: 5px;
+    }
+    
+    #inputTip {
+        border-radius: 5px;
+        outline: none;
+        background-color: white;
+        color: var(--VeryDarkCyan);
+        text-align: center;
+    }
+    
+    .tipBtn:hover {
+        background-color: var(--LightGrayishCyan);
+        color: var(--VeryDarkCyan);
+    }
+    
+    .active {
+        background-color: var(--LightGrayishCyan);
+        color: var(--VeryDarkCyan);
+    }
+    
+    #totalAmount,
+    #tipAmount {
+        color: var(--StrongCyan);
+    }
+    
+    .strongCyan {
+        color: var(--StrongCyan);
+    }
+    
+    button {
+        border-radius: 5px;
+        padding: 15px;
+        background-color: var(--LightGrayishCyan);
+        color: var(--VeryDarkCyan);
+        outline: none;
+        border: none;
+        width: 100%;
+        font-weight: 600;
+        cursor: pointer;
+        font-size: inherit;
+    }
+    
+    input {
+        padding: 10px;
+        width: 100%;
+        text-align: right;
+        font-family: inherit;
+    }
+    
+    input:hover {
+        border: 2px solid var(--StrongCyan);
+    }
+    
+    input#bill {
+        background-image: url('./images/icon-dollar.svg');
+        background-size:contain;
+        background-repeat: no-repeat;
+        text-indent: 20px;
+    }
+    input#bill:focus {
+        background-image:none;
+        text-indent:0px;
+        border: 2px solid var(--StrongCyan);
+    }
+    
+    input#numPeople {
+        background-image: url('./images/icon-person.svg');
+        background-size:contain;
+        background-repeat: no-repeat;
+    }
+    input#numPeople:focus {
+        background-image:none;
+        text-indent:0px
+    }
+    
+    /* webkit solution */
+    ::-webkit-input-placeholder { 
+        text-align:right; 
+    }
+    /* mozilla solution */
+    
+    ::-webkit-input-placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+        color: var(--VeryDarkCyan);
+        opacity: 1; /* Firefox */
+      }
+    
+    ::-moz-placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+        color: var(--VeryDarkCyan);
+        opacity: 1; /* Firefox */
+      }
+    
+    :-ms-input-placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+        color: var(--VeryDarkCyan);
+        opacity: 1; /* Firefox */
+      }
+    
+    ::-ms-input-placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+        color: var(--VeryDarkCyan);
+        opacity: 1; /* Firefox */
+      }
+    
+    ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+        color: var(--VeryDarkCyan);
+        opacity: 1; /* Firefox */
+      }
+    
+    #inputTip::-webkit-input-placeholder {
+        text-align: center;
+        font-size: 32px;
+        padding: 0;
+        font-weight: 700;
+    }
+    
+    #inputTip::-moz-placeholder {
+        text-align: center;
+        font-size: 32px;
+        padding: 0;
+        font-weight: 700;
+    }
+    
+    #inputTip:-ms-input-placeholder {
+        text-align: center;
+        font-size: 32px;
+        padding: 0;
+        font-weight: 700;
+    }
+    
+    #inputTip::-ms-input-placeholder {
+        text-align: center;
+        font-size: 32px;
+        padding: 0;
+        font-weight: 700;
+    }
+    
+    #inputTip::placeholder {
+        text-align: center;
+        font-size: 32px;
+        padding: 0;
+        font-weight: 700;
+    }
+    
+    
+    /* Chrome, Safari, Edge, Opera */
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+    
+    /* Firefox */
+    input[type=number] {
+      -moz-appearance: textfield;
+    }
+    
+          
+    @media (max-width: 768px){
+    
+      .main {
+        width: 100vw;
+        padding: 0;
+      }
+    
+      .container {
+        -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+        padding: 0;
+        }
+    
+    }
+    
+    @media (max-width: 500px) {
+        .main {
+            width: 100vw;
+        }
+       
+        .left {
+            width: 100vw;
+        }
+    
+        #tipPercentage {
+            -ms-grid-columns: 1fr 15px 1fr 15px 1fr;
+            grid-template-columns: repeat(3, 1fr);
+        }
+    
+        #inputTip::-webkit-input-placeholder {
+            font-size: 16px;
+        }
+    
+        #inputTip::-moz-placeholder {
+            font-size: 16px;
+        }
+    
+        #inputTip:-ms-input-placeholder {
+            font-size: 16px;
+        }
+    
+        #inputTip::-ms-input-placeholder {
+            font-size: 16px;
+        }
+    
+        #inputTip::placeholder {
+            font-size: 16px;
+        }
+        
+    }
