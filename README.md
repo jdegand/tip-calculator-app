@@ -51,12 +51,12 @@ This project does not lend itself well to semantic markup and accessibility.
 
 ### Useful resources
 
-- [Stack Overflow - Image Height](https://stackoverflow.com/questions/40894381/image-height-inside-flexbox-not-working-in-chrome)
+- [Stack Overflow](https://stackoverflow.com/questions/40894381/image-height-inside-flexbox-not-working-in-chrome) - Image Height
 
-- [W3 Schools - Input type number](https://www.w3schools.com/howto/howto_css_hide_arrow_number.asp)
+- [W3 Schools](https://www.w3schools.com/howto/howto_css_hide_arrow_number.asp)  - Input type number
 
-- [W3 Schools - Centering image](https://www.w3schools.com/howto/howto_css_image_center.asp)
+- [W3 Schools](https://www.w3schools.com/howto/howto_css_image_center.asp)  - Centering image
 
-- [Stack Overflow - Input width](https://stackoverflow.com/questions/17302794/how-to-set-an-input-width-to-match-the-placeholder-text-width)
+- [Stack Overflow](https://stackoverflow.com/questions/17302794/how-to-set-an-input-width-to-match-the-placeholder-text-width)  - Input width
 
 - [AutoPrefixer](https://autoprefixer.github.io/)
