@@ -36,7 +36,6 @@ Users should be able to:
 
 ### Built with
 
-- Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
 - CSS Grid
@@ -47,7 +46,8 @@ My JavaScript really came together when I allowed myself a global variable.  The
 
 ### Continued development
 
-This project does not lend itself well to semantic markup and accessibility.
+- Semantic HTML5 markup 
+- Accessibility & keyboard functionality
 
 ### Useful resources
 
