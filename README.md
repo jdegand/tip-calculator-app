@@ -51,6 +51,8 @@ My JavaScript really came together when I allowed myself a global variable.  The
 
 ### Useful resources
 
+- [AutoPrefixer](https://autoprefixer.github.io/)
+
 - [Stack Overflow](https://stackoverflow.com/questions/40894381/image-height-inside-flexbox-not-working-in-chrome) - Image Height
 
 - [W3 Schools](https://www.w3schools.com/howto/howto_css_hide_arrow_number.asp)  - Input type number
@@ -58,5 +60,3 @@ My JavaScript really came together when I allowed myself a global variable.  The
 - [W3 Schools](https://www.w3schools.com/howto/howto_css_image_center.asp)  - Centering image
 
 - [Stack Overflow](https://stackoverflow.com/questions/17302794/how-to-set-an-input-width-to-match-the-placeholder-text-width)  - Input width
-
-- [AutoPrefixer](https://autoprefixer.github.io/)
